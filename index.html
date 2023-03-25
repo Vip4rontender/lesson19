@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson 19</title>
+  </head>
+  <body></body>
+  <script>
+    // Task 1
+
+    let age = +prompt("What your age?", "0");
+    if (age <= 17) {
+      alert(`Do you study at school?`);
+    } else if (age > 17 && age < 25) {
+      alert(`Do you study at university?`);
+    } else if (age >= 25 && age < 60) {
+      alert(`Do you have a job`);
+    } else {
+      alert(`What are you doing?`);
+    }
+
+    // Task 2
+
+    let display = prompt(
+      "choose one display: block, flex, grid inline or none",
+      "inline-block"
+    );
+    switch (display) {
+      case "block":
+        alert("display 'block'");
+        break;
+      case "flex":
+        alert("display 'flex'");
+        break;
+      case "grid":
+        alert("display 'grid'");
+        break;
+      case "inline":
+        alert("display 'inline'");
+        break;
+      case "none":
+        alert("display 'none'");
+        break;
+      default:
+        alert("Set 'display: inline-block;'");
+    }
+
+    // Task 3
+
+    let number;
+
+    while (!+number) {
+      number = prompt("Please enter the number", 1);
+      continue;
+      alert("your number is incorrect, please enter correct number");
+    }
+    alert(`${number} by 12 is equals ${number * 12}`);
+
+    // Task 4
+
+    for (let i = 2; i <= 50; i += 2) {
+      console.log(i);
+    }
+  </script>
+</html>
